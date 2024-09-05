@@ -8,7 +8,7 @@ describe("App Test", () => {
   it("should render a button", () => {
     render(<App />);
 
-    expect(screen.getByRole("button")).not.toBeInTheDocument();
+    expect(screen.getByRole("button")).toBeInTheDocument();
   });
 
   it("should display the list after clicking the button", async () => {
